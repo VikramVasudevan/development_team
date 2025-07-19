@@ -27,22 +27,26 @@ class DevelopmentTeam:
     def code_reviewer(self) -> Agent:
         return Agent(config=self.agents_config["code_reviewer"], verbose=True) # type: ignore[index]
     
+    @agent
+    def frontend_engineer(self) -> Agent:
+        return Agent(config=self.agents_config["frontend_engineer"], verbose=True) # type: ignore[index]
+
 
     @task
     def design_task(self) -> Task:
         return Task(config=self.tasks_config["design_task"], verbose=True)  # type: ignore[index]
 
     @task
-    def coding_task(self) -> Task:
-        return Task(config=self.tasks_config["coding_task"], verbose=True) # type: ignore[index]
+    def backend_coding_task(self) -> Task:
+        return Task(config=self.tasks_config["backend_coding_task"], verbose=True) # type: ignore[index]
 
     @task
     def code_review_task(self) -> Task:
         return Task(config=self.tasks_config["code_review_task"], verbose=True) # type: ignore[index]
 
     @task
-    def code_rewrite_task(self) -> Task:
-        return Task(config=self.tasks_config["code_rewrite_task"], verbose=True) # type: ignore[index]
+    def backend_code_rewrite_task(self) -> Task:
+        return Task(config=self.tasks_config["backend_code_rewrite_task"], verbose=True) # type: ignore[index]
 
     @task
     def code_review_task_2(self) -> Task:
@@ -52,6 +56,11 @@ class DevelopmentTeam:
     def testing_task(self) -> Task:
         return Task(config=self.tasks_config["testing_task"], verbose=True) # type: ignore[index]
 
+    @task
+    def frontend_development_task(self) -> Task:
+        return Task(config=self.tasks_config["frontend_development_task"], verbose=True) # type: ignore[index]
+
+    
     @crew
     def crew(self) -> Crew:
         return Crew(

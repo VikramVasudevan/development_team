@@ -18,7 +18,7 @@ def run():
     Run the crew.
     """
     inputs = {
-        'requirement': 'Create a python program to evaluate the first 10000 terms of the following series and multiple the total by 4:\
+        'requirement': 'Create a web application that  allows the user to evaluate the first N terms of a given series and multiple the total by X (default to 4). for instance, the series could be something like :\
             1 + 1/3 - 1/5 + 1/7 - 1/9 ... \
             ',
         'module_name' : 'mod_series_eval'
