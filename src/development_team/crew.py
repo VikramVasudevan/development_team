@@ -48,6 +48,10 @@ class DevelopmentTeam:
     def code_review_task_2(self) -> Task:
         return Task(config=self.tasks_config["code_review_task_2"], verbose=True) # type: ignore[index]
 
+    @task
+    def testing_task(self) -> Task:
+        return Task(config=self.tasks_config["testing_task"], verbose=True) # type: ignore[index]
+
     @crew
     def crew(self) -> Crew:
         return Crew(

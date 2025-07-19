@@ -55,3 +55,14 @@ code_review_task_2:
     - design_task
     - coding_task
     - code_rewrite_task
+
+testing_task:
+  description: >
+    Write comprehensive unit test cases for the oode written by the backend engineer for the given requirement. 
+    The requirement is this : {requirement}
+  expected_output: >
+    A python file containing the code with unit test cases for the given requirement.
+  agent: backend_engineer
+  output_file: output/{module_name}_test.py
+  context:
+    - code_rewrite_task
