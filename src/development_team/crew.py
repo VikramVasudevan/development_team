@@ -31,6 +31,9 @@ class DevelopmentTeam:
     def frontend_engineer(self) -> Agent:
         return Agent(config=self.agents_config["frontend_engineer"], verbose=True) # type: ignore[index]
 
+    @agent
+    def test_engineer(self) -> Agent:
+        return Agent(config=self.agents_config["test_engineer"], verbose=True) # type: ignore[index]
 
     @task
     def design_task(self) -> Task:

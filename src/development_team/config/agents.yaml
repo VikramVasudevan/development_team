@@ -36,6 +36,8 @@ code_reviewer:
     2. Code Efficiency
     3. Whether the code would achieve the objective stated in the requirements.
 
+    Do not provide unnecessaary commentary. stay on point.
+
     if there were any review comments during the previous iteration, ensure you review the code again to ensure your earlier comments have been incorporated.
 
     here is the business requirement:
